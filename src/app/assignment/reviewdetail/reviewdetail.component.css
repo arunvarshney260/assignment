@@ -1,0 +1,24 @@
+.profilepicture{
+    background-color: saddlebrown;
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+.profiledisc{
+    background-color: violet;
+    width: 56.8%;
+    height: 150px;
+    position: absolute;
+    margin-left: 200px;
+
+}
+
+.profileaction{
+    background-color: yellow;
+    width: 56.8%;
+    height: 50px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 150px;
+}
