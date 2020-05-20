@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { ProfileactionsComponent } from './assignment/profileactions/profileacti
 import { AuthorComponent } from './assignment/author/author.component';
 import { EngagementComponent } from './assignment/engagement/engagement.component';
 import { ReviewcontainerComponent } from './assignment/reviewcontainer/reviewcontainer.component';
+import { NgfordirectivesComponent } from './assignment2/ngfordirectives/ngfordirectives.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { ReviewcontainerComponent } from './assignment/reviewcontainer/reviewcon
     ProfileactionsComponent,
     AuthorComponent,
     EngagementComponent,
-    ReviewcontainerComponent
+    ReviewcontainerComponent,
+    NgfordirectivesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

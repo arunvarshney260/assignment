@@ -1,0 +1,47 @@
+<br>
+<br>
+<table border="1" style="text-align: center;">
+    <tr >
+        <th>
+            ID
+        </th>
+        <th>
+            NAME
+        </th>
+        <th>
+            USERNAME
+        </th>
+        <th>
+            LATITUDE
+        </th>
+        <th>
+            LONGITUDE
+        </th>
+        <th>
+           COMPANY NAME
+        </th>
+    </tr>
+
+
+    <tr *ngFor="let d of data; let counter=index">
+        <td>
+            {{data[counter]["id"]}}
+        </td>
+        <td>
+            {{data[counter]["name"]}}
+        </td>
+        <td>
+            {{data[counter]["username"]}}
+        </td>
+        <td>
+            {{data[counter]["address"]["geo"]["lat"]}}
+        </td>
+        <td>
+            {{data[counter]["address"]["geo"]["lng"]}}
+        </td>
+        <td>
+            {{data[counter]["company"]["name"]}}
+        </td>
+    </tr>
+</table>
+
